@@ -1,11 +1,11 @@
-About guietta
-=============
+About guietta-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/guietta-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/alfiopuglisi/guietta
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/guietta-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple GUI builder for Python
 
