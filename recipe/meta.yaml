@@ -1,5 +1,5 @@
 {% set name = "guietta" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5d63923630502a8bd677c7b186223ebafa2d319546664da95be02bbf476d3a2e
+  sha256: 1b97d1b1e8568b6683181e73c375b2c715cca907b779d9ab784ff08741c66fa4
 
 build:
   noarch: python
