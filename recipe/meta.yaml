@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 284698ffce06455e984fb3589cf4f4809c16aac00b1f15fd44e7240a8a7a5bff
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - pyside2
 
 # Test is done in run_test.sh, because we need to start a
